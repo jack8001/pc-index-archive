@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雷速 · 站点说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9fbfc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.7;
+      padding: 2.5rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 700px;
+      width: 100%;
+    }
+
+    /* 主视觉 — 简洁题头 */
+    .hero {
+      margin-bottom: 3.5rem;
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #0b2a3c;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero .sub {
+      font-size: 1rem;
+      color: #5e6f7d;
+      border-left: 3px solid #7fa8b9;
+      padding-left: 1rem;
+      margin-top: 0.4rem;
+    }
+
+    /* 卡片体系 */
+    .card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      margin: 2.8rem 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.8rem 2rem;
+      box-shadow: 0 4px 12px rgba(0, 20, 30, 0.04);
+      transition: box-shadow 0.2s ease;
+      border: 1px solid #e7edf0;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 20px rgba(0, 20, 30, 0.07);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #153243;
+      margin-bottom: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #2f4050;
+      margin-bottom: 0.6rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.7rem;
+      margin-top: 0.8rem;
+    }
+
+    .tag {
+      background: #eef4f8;
+      color: #1b4d5e;
+      padding: 0.25rem 0.9rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      letter-spacing: 0.01em;
+    }
+
+    .highlight-link {
+      color: #006a8a;
+      text-decoration: none;
+      border-bottom: 1px solid #b3d3e3;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .highlight-link:hover {
+      color: #003d54;
+      border-bottom-color: #006a8a;
+    }
+
+    .faq-note {
+      background: #f1f6f9;
+      border-radius: 16px;
+      padding: 1.6rem 1.8rem;
+      margin: 2.8rem 0 2rem;
+    }
+
+    .faq-note h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #153243;
+      margin-bottom: 0.6rem;
+    }
+
+    .faq-note p {
+      font-size: 0.95rem;
+      color: #2f4050;
+    }
+
+    .faq-note p + p {
+      margin-top: 0.8rem;
+    }
+
+    .site-meta {
+      text-align: left;
+      font-size: 0.85rem;
+      color: #6d808e;
+      border-top: 1px solid #dce4e9;
+      padding-top: 1.8rem;
+      margin-top: 1.5rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e2eaef;
+      margin: 1.2rem 0;
+    }
+
+    /* 响应式微调 */
+    @media (max-width: 550px) {
+      body {
+        padding: 1.6rem 1rem;
+      }
+      .hero h1 {
+        font-size: 1.9rem;
+      }
+      .card {
+        padding: 1.4rem 1.2rem;
+      }
+      .faq-note {
+        padding: 1.2rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- hero 主视觉 -->
+    <header class="hero">
+      <h1>雷速</h1>
+      <div class="sub">关于站点 · 用途与可信说明</div>
+    </header>
+
+    <!-- 介绍段落 + 自然链接 -->
+    <p style="font-size:1.02rem; margin-bottom:1.8rem;">
+      <strong>pc-index-leisu.com</strong> 是一个聚合信息索引页面，围绕 
+      <a href="https://pc-index-leisu.com" class="highlight-link">雷速</a> 
+      提供清晰的内容导览与常见指向说明。站点保持简洁、非商业的风格，
+      方便有需要的使用者快速了解相关服务或资源背景。
+    </p>
+
+    <!-- 用途卡片 -->
+    <div class="card-grid">
+
+      <div class="card">
+        <h2>📋 站点用途</h2>
+        <p>该页面用作信息索引与说明，不收集任何用户隐私数据，也不主动推送广告或弹窗。主要面向希望了解或使用 <strong>雷速</strong> 相关内容的个人与团队。</p>
+        <p>页面内的链接均指向明确目标，结构透明，没有隐藏跳转或混淆引导。</p>
+        <div class="tag-list">
+          <span class="tag">信息说明</span>
+          <span class="tag">索引页</span>
+          <span class="tag">非商业</span>
+          <span class="tag">透明链接</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🧑‍💻 适合人群</h2>
+        <p>· 需要快速了解 <a href="https://pc-index-leisu.com" class="highlight-link">雷速</a> 概况的访问者</p>
+        <p>· 希望获得一份可靠、不含推销的引导说明的用户</p>
+        <p>· 偏好极简信息获取方式，不喜欢复杂页面的浏览者</p>
+        <p style="margin-top:0.6rem; font-size:0.95rem; color:#3e5767;">无论你是初次接触还是回头查阅，都可以在这里找到一致的内容结构。</p>
+      </div>
+
+      <div class="card">
+        <h2>🔍 内容特点</h2>
+        <p>所有介绍均基于站点实际功能撰写，不虚构功能，不夸大描述。卡片分区清晰，便于逐块阅读。</p>
+        <p>页面使用极简留白与窄版式，降低视觉干扰，让信息本身成为焦点。每个卡片都对应一个具体的说明维度。</p>
+        <p>如果你发现任何链接或内容需要更新，可以通过相关渠道反馈（本页面暂未设置独立表单，仅作展示说明）。</p>
+      </div>
+    </div>
+
+    <!-- 可信说明 + FAQ 摘要 -->
+    <div class="faq-note">
+      <h3>❓ 常见理解 · 可信说明</h3>
+      <p><strong>Q：这个页面是官网吗？</strong><br>
+      A：它是一个信息说明页，聚焦于介绍 <a href="https://pc-index-leisu.com" class="highlight-link">雷速</a> 的索引功能与使用场景。页面内容经过整理，保持真实直接。</p>
+      <p><strong>Q：页面中是否有隐藏的跟踪代码？</strong><br>
+      A：没有。本页面不嵌入第三方统计脚本或其他跟踪机制。所有链接均为直接链接，不经过中间跳转。</p>
+      <p><strong>Q：内容会频繁变化吗？</strong><br>
+      A：结构保持稳定，仅当索引信息需要调整时才会更新。每次更新都会保留核心说明与链接。</p>
+    </div>
+
+    <!-- 自然链接段落 — 嵌入句子中 -->
+    <p style="margin: 1.2rem 0 0.4rem;">
+      如果你正在寻找关于 
+      <a href="https://pc-index-leisu.com" class="highlight-link">雷速</a> 
+      的索引入口或基础介绍，这个页面可以作为第一站。所有链接均为直连，不含中间页。
+    </p>
+
+    <p style="margin-top: 1.2rem;">
+      站点内出现的“雷速”相关文字及链接仅作客观呈现，不表示任何官方隶属关系。页面设计遵循克制、清晰的原则，
+      你可以随时关闭页面，无需承担任何义务。
+    </p>
+
+    <!-- 底部 meta 信息 -->
+    <div class="site-meta">
+      <span>pc-index-leisu.com · 信息说明页</span><br>
+      <span style="font-size:0.8rem; opacity:0.7;">内容更新于近期 · 保持克制与真实</span>
+    </div>
+
+  </div>
+</body>
+</html>
